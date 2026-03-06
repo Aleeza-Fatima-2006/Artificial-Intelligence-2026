@@ -1,3 +1,4 @@
+#LUHN Algorithm
 og_num = 5893804115457289
 a = og_num % 10
 og_num = og_num // 10
@@ -19,4 +20,23 @@ print("\nTotal sum:", total)
 if total % 10 == 0:
     print("Valid card number")
 else:
+
     print("Invalid card number")
+
+#Punctuation removal
+word=input("Enter a word or a sentence to remove punctuation from it:")
+word.split()
+clean_str=""
+for i in word:
+    if i.isalnum():
+        clean_str+=i
+print(clean_str)
+
+#Sorted Alphabetical order
+
+word=list(input("Enter the word to sort it in alphabetical order:"))
+new_word="".join(word)
+new_word=new_word.lower()
+new_word1=list(new_word)
+new_word1.sort()
+print(new_word1)
